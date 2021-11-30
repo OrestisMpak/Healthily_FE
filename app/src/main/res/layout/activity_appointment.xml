@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/medical_appointment" />
+
+    <Spinner
+        android:id="@+id/spHospitals"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/hospitals"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spDoctors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spDoctors"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/doctors"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/spDates"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/dates"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spDoctors"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/schedule_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        android:enabled="false"
+        android:text="@string/schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spDoctors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
