@@ -21,7 +21,7 @@ import com.example.homescreen.ui.home.HomeFragment
 //import com.example.homescreen.ui.home.HomeFragment
 //import com.example.homescreen.ui.home.HomeViewModel
 
-class MainActivity : AppCompatActivity() {
+class  MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding

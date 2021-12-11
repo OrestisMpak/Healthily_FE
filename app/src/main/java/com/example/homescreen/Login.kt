@@ -14,6 +14,7 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.loginbtn.setOnClickListener{ login() }
+        binding.signupbtn.setOnClickListener{ signup()}
     }
     private fun login() {
         val user = "12345678901"
@@ -36,4 +37,9 @@ class Login : AppCompatActivity() {
             }
         }
     }
+    private fun signup() {
+        val intent = Intent(this, signup::class.java)
+        startActivity(intent)
+    }
+
 }

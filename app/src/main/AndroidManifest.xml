@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeScreen">
         <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
             android:name=".Appointment"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
@@ -25,9 +28,8 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.HomeScreen.NoActionBar"
-            android:parentActivityName=".Login">
-        </activity>
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.HomeScreen.NoActionBar"></activity>
         <activity
             android:name=".Login"
             android:exported="true">

@@ -62,6 +62,7 @@ class Appointment : AppCompatActivity() {
         binding.spDates.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 binding.scheduleButton.isEnabled = position>0
+
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -74,5 +75,7 @@ class Appointment : AppCompatActivity() {
             Toast.makeText(this, "Appointment scheduled successfully!", Toast.LENGTH_LONG).show()
 
         }
+
+
     }
 }

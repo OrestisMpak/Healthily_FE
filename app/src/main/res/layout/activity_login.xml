@@ -77,18 +77,27 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/forgotpass"
-        android:layout_width="wrap_content"
+        android:id="@+id/OR"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/loginbtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Forgot password?"
+        android:gravity="center|center_vertical"
+        android:text="OR"
         android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OR"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
 
 </RelativeLayout>
