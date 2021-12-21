@@ -1,3 +1,4 @@
-# hEalth
-skgcode8 - team A - project hEalth
-eHealth Portal Android App for skg.code8 project
+# Healthily
+Started as an skgcode8 - team A - project
+
+Now a DevKlaps project called Healthily
